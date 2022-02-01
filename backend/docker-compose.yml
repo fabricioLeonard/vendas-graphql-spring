@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  service_mysql:
+    container_name: banco_de_dados_mysql_graphql
+    image: mysql:8.0.21
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db_teste
+    ports:
+    - "3306:3306"
